@@ -1,6 +1,7 @@
 package com.mocha.hellocordova.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.annotation.Nullable;
@@ -14,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.mocha.hellocordova.MainActivity;
 import com.mocha.hellocordova.R;
 import com.mocha.hellocordova.adapter.NinePartAdapter;
 import com.youth.banner.Banner;
@@ -50,9 +52,9 @@ public class MyMoudle extends Fragment {
         banner=view.findViewById(R.id.banner_home);
         //创建图片集合
         List<String> images = new ArrayList<>();
-        images.add("file:///android_asset/www/img/logo.png");
-        images.add("file:///android_asset/www/img/logo.png");
-        images.add("file:///android_asset/www/img/logo.png");
+        images.add("file:///android_asset/www/img/1.png");
+        images.add("file:///android_asset/www/img/2.png");
+        images.add("file:///android_asset/www/img/3.png");
         List<String> titles = new ArrayList<>();
         titles.add("我是1");
         titles.add("我是2");
@@ -79,7 +81,7 @@ public class MyMoudle extends Fragment {
         for (int i = 1; i < 10; i++)
              {
                  HashMap<String, Object> hashMap = new HashMap<String, Object>();
-                 hashMap.put("image", R.mipmap.ic_launcher);
+                 hashMap.put("image", R.mipmap.moudle);
                  hashMap.put("text", "九宫格"+i);
                  arrayList.add(hashMap);
              }
@@ -91,6 +93,8 @@ public class MyMoudle extends Fragment {
                               long arg3) {
                 // TODO Auto-generated method stub
                 myAdapter.setSelection(arg2);
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
                 myAdapter.notifyDataSetChanged();
                 }
          });

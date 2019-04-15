@@ -36,6 +36,7 @@ public class MainActivity extends CordovaActivity
         }
 
         // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
+        //loadUrl(launchUrl);
+        loadUrl("http://211.138.191.67:8089/Phone_portal/authentication/internal_test?uid=34002736");
     }
 }

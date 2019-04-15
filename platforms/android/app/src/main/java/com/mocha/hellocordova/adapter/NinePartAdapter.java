@@ -68,7 +68,7 @@ public class NinePartAdapter extends BaseAdapter
              hashMap = (HashMap<String, Object>) getItem(arg0);
              imageView.setImageResource((Integer) hashMap.get("image"));
              textView.setText((CharSequence) hashMap.get("text"));
-             view.setBackgroundColor(Color.GREEN);
+             //view.setBackgroundColor(Color.GREEN);
 
              return view;
           }//设置适配器或更新适配器调用

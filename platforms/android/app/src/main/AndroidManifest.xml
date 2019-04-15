@@ -50,6 +50,7 @@
         <activity android:name=".TabhostActivity">
 
         </activity>
+        <activity android:name=".MainActivity"/>
         <provider
             android:name="org.apache.cordova.camera.FileProvider"
             android:authorities="${applicationId}.provider"

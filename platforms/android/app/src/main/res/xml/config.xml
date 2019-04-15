@@ -20,6 +20,14 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <!--防止调起本地浏览器start-->
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="data:*" />
+    <access origin="*"/>
+    <access origin="https://*/*"/>
+    <access origin="http://*/*"/>
+    <!--防止调起本地浏览器end-->
     <preference name="loglevel" value="DEBUG" />
     <feature name="Camera">
         <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
