@@ -1,0 +1,34 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.mocha.hellocordova"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.mocha.hellocordova"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.mocha.hellocordova"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.mocha.hellocordova"
+    },
+    "cordova-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.mocha.hellocordova"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.mocha.hellocordova"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.mocha.hellocordova"
+    }
+  }
+}
