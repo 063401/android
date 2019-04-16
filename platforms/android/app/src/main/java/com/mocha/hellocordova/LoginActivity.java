@@ -23,6 +23,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         switch (v.getId()){
             case R.id.subBtn:
                 Intent intent = new Intent(LoginActivity.this, TabhostActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
                 //startActivity(intent);
                 Utils.getApp().startActivity(intent);
         }
